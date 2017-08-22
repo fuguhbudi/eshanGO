@@ -1,0 +1,128 @@
+ion-menu.sidemenu {
+    ion-content {
+        background-color: #424242;
+    }
+
+    ion-avatar {
+        margin: 0px 15px 0px 0px;
+    }
+
+    .profile {
+        background-color: #797979;
+    }
+
+    .list {
+        // border-bottom: 1px #9A9A9A solid;
+    }
+
+    .list-md .item-block .item-inner {
+        border-bottom: 0px;
+    }
+
+    .listFontColor {
+        color: #EFEFEF;
+    }
+
+    .listNormal {
+        background-color: transparent;
+    }
+
+    .listFooter {
+        background-color: black;
+    }
+
+    .image-cropper {
+        max-width: 9.5rem;
+        max-height: 9.5rem;
+        position: relative;
+        overflow: hidden;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    .foto-div{
+        width: 8em;
+        height: 8em;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+        background-position-y: 0;
+        margin-top: 2em;
+        border: 3px solid #FFF; 
+    }
+
+    img {
+        display: inline;
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+    }
+
+    ion-img {
+        display: inline;
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+    }
+
+    ion-thumbnail { 
+
+        div {
+            margin-top: 0 !important;
+        }
+
+        // img {
+        //     max-height:9rem; 
+        //     max-width:9rem; 
+        //     margin:0 auto; 
+        //     border-radius: 50rem;
+        //     -webkit-border-radius: 50%;
+        //     -moz-border-radius: 50%;
+        //     -ms-border-radius: 50%;
+        //     -o-border-radius: 50%;
+        // }
+        p {
+            margin:0 auto; font-size: 0.8em; margin-top: 5px; color: #FFFFFF;
+        } 
+    }
+
+    .scroll-content {
+      background-color: color($colors, primary);
+      display: flex;
+      flex-direction: column;
+    }
+
+    #cloud-layer {
+      background-image: url(../assets/images/cloud-layer.png);
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    ion-item, ion-list-header {
+        border-radius: 0 !important;
+        padding-left: 10px !important;
+        background-color: #f6f6f6;
+        opacity: 0.7;
+        font-size: 0.9em;
+        border: 0 solid #dedede;
+    }
+
+    .list-header-md {
+        margin-bottom: 0;
+        border-top: 0 solid #dedede;
+    }
+
+    .ion-row {
+        align-items: center;
+        text-align: center;
+        font-size: 0.9em;
+        letter-spacing: 0.2em;
+    }
+
+
+}

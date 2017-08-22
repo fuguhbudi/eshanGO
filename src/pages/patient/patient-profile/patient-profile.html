@@ -1,0 +1,155 @@
+<ion-header>
+  <ion-navbar>
+    <button clear ion-button (click)="dismiss()" icon-only style="color: whitesmoke;">
+      {{'Close' | translate}}
+    </button>
+    <ion-title>
+      {{'Profile' | translate}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #F3F3F5;">
+  <ion-row>
+    <ion-col col-sm-8 push-sm-2>
+      <ion-list>
+        <ion-item style="height: 325vw !important; width: 97vw !important; left: -4vw; top: -4vw;">
+            <ion-grid style="height: 35 vw; position: absolute; top: 2vw; left: 0vw;">
+             <div>
+              <div style="width: 6em;
+                          height: 6em;
+                          border-radius: 50%;
+                          background-size: cover;
+                          background-repeat: no-repeat;
+                          background-position: center 0px;
+                          margin: 2em auto 0px;
+                          border: 3px solid rgb(47, 64, 80);
+                          background-image: url(http://biographydisc.com/wp-content/uploads/2015/10/Steve-Jobs-biographydisc.jpg);
+                          left: 5vw;
+                          top: -5vw;
+                          position: absolute; " [ngStyle]="{'background-image': 'url(http://biographydisc.com/wp-content/uploads/2015/10/Steve-Jobs-biographydisc.jpg)'}" (click)="gotoProfile()" menuClose>
+              </div>
+              <h2><a style="left: 40vw; top: 9vw; position: absolute; color: black;">Fuguh Budi Utomo</a></h2>
+              <h3><a style="left: 40vw; top: 15vw; position: absolute; color: black;">27 Tahun</a></h3>
+              <h3><a style="left: 40vw; top: 20vw; position: absolute; color: black;">Tangerang</a></h3>
+            </div>
+            <div style="position: absolute; width: 95vw; top: 36vw;">
+              <div padding>
+                <ion-segment [(ngModel)]="pet">
+                  <ion-segment-button value="personal_data">
+                    Personal Data
+                  </ion-segment-button>
+                  <ion-segment-button value="rekam_medis">
+                    Rekam Medik
+                  </ion-segment-button>
+                  <ion-segment-button value="asuransi">
+                    Asuransi
+                  </ion-segment-button>
+                </ion-segment>
+              </div>
+
+              <div [ngSwitch]="pet">
+                <ion-list *ngSwitchCase="'personal_data'">
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Jenis Kelamin</ion-label>
+                    <ion-label>Laki-Laki</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Tempat tanggal lahir</ion-label>
+                    <ion-label>Tangerang 1-April-1990</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Agama</ion-label>
+                    <ion-label>Islam</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Pekerjaan</ion-label>
+                    <ion-label>Karyawan Swasta</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Golongan darah</ion-label>
+                    <ion-label>A</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Provinsi</ion-label>
+                    <ion-label>Banten</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Kota</ion-label>
+                    <ion-label>Tangerang</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Kecamatan</ion-label>
+                    <ion-label>Ciledug</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Kelurahan</ion-label>
+                    <ion-label>Paninggilan Utara</ion-label>
+                  </ion-item>
+                  <ion-item text-wrap style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Alamat</ion-label>
+                    <ion-label>Jl. H. Gedad No 49</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>No Handphone</ion-label>
+                    <ion-label>08568522142</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Email</ion-label>
+                    <ion-label>fuguh@nugrahasantosa.com</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Nama Ibu</ion-label>
+                    <ion-label>Aril Tantum</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Nama Ayah</ion-label>
+                    <ion-label>Dybala</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Nama Pasangan</ion-label>
+                    <ion-label>Inggit ganasih</ion-label>
+                  </ion-item>
+                </ion-list>
+
+                <ion-list *ngSwitchCase="'rekam_medis'">
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Rak</ion-label>
+                    <ion-label>1A</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Folder Keluarga</ion-label>
+                    <ion-label>1AAAAA</ion-label>
+                  </ion-item>
+                </ion-list>
+
+                <ion-list *ngSwitchCase="'asuransi'">
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>BPJS Kesehatan</ion-label>
+                    <ion-label>AAAAAAAAA</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Alianz</ion-label>
+                    <ion-label>BBBBBBBBB</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Syariah Axa</ion-label>
+                    <ion-label>CCCCCCCC</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Prudential</ion-label>
+                    <ion-label>DDDDDDDDD</ion-label>
+                  </ion-item>
+                  <ion-item style="border-bottom: 1px solid gray; border-width: thin;">
+                    <ion-label style="margin-bottom: -10px; font-size: 1.2rem; color: #82D4CA;" stacked>Keterangan</ion-label>
+                    <ion-label>EEEEEEEEE</ion-label>
+                  </ion-item>
+                </ion-list>
+              </div>
+            </div>
+            </ion-grid>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-content>

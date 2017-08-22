@@ -1,0 +1,39 @@
+page-language {
+    .toolbar-background {
+        background-color: #233645;
+        
+    }
+
+    .input-wrapper {
+        position: absolute;
+        width: 82vw;
+    }
+
+    .list-ios[no-lines] .item, .list-ios[no-lines] .item .item-inner {
+        border-width: 0;
+        height: 155vw;
+    }
+
+    .list-md[no-lines] .item, .list-md[no-lines] .item .item-inner {
+        border-width: 0;
+        height: 155vw;
+    }
+
+
+    .toolbar-title-ios {
+        color: whitesmoke;
+    }
+    .list-ios .item[no-lines], .list-ios .item[no-lines] .item-inner {
+        border-width: 0;
+        height: 150vw;
+    }
+
+    .toolbar-title-md {
+        color: whitesmoke;
+    }
+    .list-md .item[no-lines], .list-ios .item[no-lines] .item-inner {
+        border-width: 0;
+        height: 150vw;
+    }
+    
+}

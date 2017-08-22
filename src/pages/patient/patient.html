@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle icon-only style="color: whitesmoke;">
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>
+      {{'Patient' | translate}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #F3F3F5;">
+<ion-list>
+  <ion-item-sliding>
+    <ion-item (click)="goToPatientProfile()">
+      <ion-avatar item-left>
+        <img src="http://biographydisc.com/wp-content/uploads/2015/10/Steve-Jobs-biographydisc.jpg">
+      </ion-avatar>
+      <h2>fuguh budi utomo</h2>
+      <p>NSTI-PSN-010211</p>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="primary">
+        <!--<ion-icon name="mail"></ion-icon>-->
+        {{'Edit' | translate}}
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="http://biographydisc.com/wp-content/uploads/2015/10/Steve-Jobs-biographydisc.jpg">
+      </ion-avatar>
+      <h2>inggit ganasih</h2>
+      <p>NSTI-PSN-010212</p>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="primary">
+        <!--<ion-icon name="mail"></ion-icon>-->
+        {{'Edit' | translate}}
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="http://biographydisc.com/wp-content/uploads/2015/10/Steve-Jobs-biographydisc.jpg">
+      </ion-avatar>
+      <h2>lorent insum</h2>
+      <p>NSTI-PSN-010213</p>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="primary">
+        <!--<ion-icon name="mail"></ion-icon>-->
+        {{'Edit' | translate}}
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+</ion-content>

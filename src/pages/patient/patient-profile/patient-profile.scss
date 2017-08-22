@@ -1,0 +1,103 @@
+patient-profile {
+    .header-ios .toolbar-ios:last-child .toolbar-background-ios {
+        border-width: 0 0 0.55px;
+        background-color: #233645 !important;
+        color: whitesmoke;
+    }
+    .toolbar-title-ios {
+        color: whitesmoke;
+    }
+    .list-ios .item[no-lines], .list-ios .item[no-lines] .item-inner {
+        border-width: 0;
+        height: 150vw;
+    }
+
+    .toolbar-title-md {
+        color: whitesmoke;
+    }
+    .list-md .item[no-lines], .list-ios .item[no-lines] .item-inner {
+        border-width: 0;
+        height: 150vw;
+    }
+    ion-app.ios [padding], ion-app.ios [padding] .scroll-content {
+        padding: 16px;
+        width: 105vw;
+    }
+
+    ion-app.md [padding], ion-app.md [padding] .scroll-content {
+        padding: 16px;
+        
+    }
+    .scroll-content {
+        left: -10px;
+        width: 105vw;
+    }
+
+    .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+        color: whitesmoke;
+        background-color: transparent;
+    }
+
+    .bar-button-default-md, .bar-button-default.bar-button-md-default, .bar-button-clear-md-default {
+        color: whitesmoke;
+        background-color: transparent;
+    }
+
+    .toolbar-background-ios {
+        background: #233645 !important;
+        background-color: #233645 !important;
+    }
+
+    .toolbar-background-md {
+        background: #233645 !important;
+        background-color: #233645 !important;
+    }
+    .stacked{
+        color: #82D4CA;
+    }
+
+
+    .label-ios {
+        margin-bottom: -10px;
+        font-size: 1.2rem;
+        color: #82D4CA;
+    }
+    .label-ios[stacked] {
+        margin-bottom: -10px;
+        font-size: 1.2rem;
+        color: #82D4CA;
+    }
+
+    .segment-ios .segment-button.segment-activated {
+        color: #fff;
+        background-color: #82D4CA !important;
+        opacity: 1;
+        transition: 100ms all linear;
+    }
+
+    .segment-md .segment-button.segment-activated {
+        color: #fff;
+        background-color: #82D4CA !important;
+        opacity: 1;
+        transition: 100ms all linear;
+    }
+    .segment-button-ios-background-color-activated{
+        background-color: #82D4CA !important;
+    }
+    .segment-ios .segment-button {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 0;
+        height: 3.2rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #82D4CA;
+        font-size: 1.3rem;
+        line-height: 3rem;
+        color: #82D4CA;
+        background-color: transparent;
+    }
+    
+}
+

@@ -1,0 +1,45 @@
+page-employee {
+    .toolbar-background {
+        background-color: #233645;
+        
+    }
+    .toolbar-title-ios {
+        color: whitesmoke;
+    }
+    .list-ios .item[no-lines], .list-ios .item[no-lines] .item-inner {
+        border-width: 0;
+        height: 150vw;
+    }
+
+    .toolbar-title-md {
+        color: whitesmoke;
+    }
+    .list-md .item[no-lines], .list-ios .item[no-lines] .item-inner {
+        border-width: 0;
+        height: 150vw;
+    }
+    ion-app.ios [padding], ion-app.ios [padding] .scroll-content {
+        padding: 16px;
+        width: 105vw;
+    }
+
+    ion-app.md [padding], ion-app.md [padding] .scroll-content {
+        padding: 16px;
+        
+    }
+    .scroll-content {
+        left: -10px;
+        width: 105vw;
+    }
+
+    .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+        color: whitesmoke;
+        background-color: transparent;
+    }
+
+    .bar-button-default-md, .bar-button-default.bar-button-md-default, .bar-button-clear-md-default {
+        color: whitesmoke;
+        background-color: transparent;
+    }
+}
+

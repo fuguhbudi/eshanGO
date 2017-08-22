@@ -1,0 +1,65 @@
+<!--<ion-nav [root]="rootPage"></ion-nav>-->
+<ion-menu [content]="content">
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>Pages</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+  <ion-content style=" background: linear-gradient(to bottom,  #233645 0%, #21272d 100%);">
+    <ion-list>
+     <div style="width: 8em;
+        height: 8em;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+        background-position-y: 0;
+        margin-top: 2em;
+        border: 3px solid #2F4050; " [ngStyle]="{'background-image': 'url(http://biographydisc.com/wp-content/uploads/2015/10/Steve-Jobs-biographydisc.jpg)'}" (click)="gotoProfile()" menuClose>
+    </div>
+    <ion-thumbnail>
+          <p align="center" style="color: whitesmoke;">Steve Jobs</p>
+          <p align="center" style="color: whitesmoke;">CEO</p>
+    </ion-thumbnail>  
+    <div padding style="width: 83vw">
+        <!--<ion-list-header>
+          <br> Menu
+        </ion-list-header>-->
+        <ion-item no-lines *ngFor="let p of pages; let i=index" (click)="openPage(p)"  menuClose [hidden]="!p.show" style="background-color: #2F4050; color: whitesmoke;">
+          <ion-icon name="{{p.icons}}" item-left [hidden]="!p.show"></ion-icon>
+          <ion-label [hidden]="!p.show">{{p.title}}</ion-label>
+        </ion-item>
+        <!--<ion-list-header>
+          <br>
+        </ion-list-header>-->
+        <!--<ion-item no-lines (click)="gotoSetting()" menuClose  style="background-color: #2F4050; color: whitesmoke;">
+          <ion-icon item-left name="cog"></ion-icon>
+          <ion-label>Account Setting</ion-label>
+        </ion-item>
+        <ion-item no-lines (click)="gotoSetting()" menuClose  style="background-color: #2F4050; color: whitesmoke;">
+          <ion-icon item-left name="md-chatboxes"></ion-icon>
+          <ion-label>Language</ion-label>
+        </ion-item>-->
+        
+        <!--<ion-item style="background-color: #2F4050; color: whitesmoke;">
+          <br><br>
+          <ion-label item-center class="ion-row">Nugraha Santosa Tech. &copy; 2017.<br>All rights reserved.</ion-label>
+        </ion-item>-->
+    </div>
+    <div padding style="width: 83vw; bottom: 0vw; position: absolute;">
+        <ion-item no-lines (click)="gotoLogout()" menuClose  style="background-color: #2F4050; color: whitesmoke;">
+          <ion-icon item-left name="power"></ion-icon>
+          <ion-label>{{'Logout' | translate}}</ion-label>
+        </ion-item>
+    </div>
+      <!--<button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>-->
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
